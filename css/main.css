@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+header > nav > a {
+    display: inline;
+    margin: 0 20px 0 0;
+    border: 1px solid royalblue;
+    border-radius: 4px;
+    padding: 8px 4px;
+    background: linear-gradient( #04cef1,#0579f5f8);
+    text-decoration: none;
+    color: black;
+}
+
+.omikuji {
+    text-align: center;
+
+}
+.inner-block {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    max-width: 1000px;
+}
+   
+.quiz {
+    min-height: 100vh;
+    padding: 100px 0;
+    background: #fff5db;
+}
+   
+.quiz-content {
+    border: 1px solid #222;
+    background-color: rgba(#fff, 0.4);
+    box-shadow: 2px 2px 4px rgba($color: #000, $alpha: 0.1);
+    position: relative;
+}
+ 
+.quiz-question-number {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px solid #222;
+    padding: 20px;
+}
+
+.quiz-question {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    padding: 30px 200px 0px;
+}
+
+.quiz-answer {
+    list-style: none;
+    display: grid;
+    position: relative;
+    grid-template-columns: ;
+    /* grid-template-columns: repeat(2, 1fr); */
+    row-gap: 20px;
+    padding: 0 100px 100px;
+    li {
+      position: relative;
+      label {
+            color: #222;
+            display: block;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            width: 80%;
+            padding: 4px 20px 4px 80px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.16;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            border: 1px solid #000;
+            white-space: pre-wrap;
+            &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+
+ 
+.quiz-answer {
+    li {
+      label {
+            &::after {
+                position: absolute;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                content: "";
+                width: 60px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                z-index: 1;
+                pointer-events: none;
+                border-right: 1px solid #000;
+            }
+            &.button01::after {
+                content: "A";
+            }
+            &.button02::after {
+                content: "B";
+            }
+            &.button03::after {
+                content: "C";
+            }
+            &.button04::after {
+                content: "D";
+            }
+        }
+    }
+}
+
+.kaisetsu{
+    display: block;
+   margin: 20px auto;
+   margin-top: 20px;
+   text-align: center;
+   background: rgb(247, 150, 126);
+   border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+.btn-score {
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(115, 248, 122);
+}
+
+#quiz-01 {
+    font-size: 18px;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+#quiz-02 {
+    font-size: 18px;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+#quiz-03 {
+    font-size: 18px;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+#quiz-04 {
+    font-size: 18px;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+#quiz-05 {
+    font-size: 18px;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+/* .quiz_1 > form > label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 23px;
+    text-align: center;
+} */
+.quiz-answer > li > label:hover{
+    color: red;
+}
+/* .quiz_1 > form > label > input {
+    margin: 0 5px 0 0;
+    cursor: pointer;
+} */
+#score-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 50px;
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 20px auto;
+    max-width: 400px;
+}
+    
+  

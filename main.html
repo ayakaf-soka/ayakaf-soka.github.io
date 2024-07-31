@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayaka Fujiyoshi">
+    <meta name="keywords" content="html, css, javascript">
+    <title>課題4</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+    
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>▶︎タイトル</h1>
+
+            <nav>
+                <a href="main.html">ホーム</a>
+                <a href="sub1.html">ブルーインパルス</a>
+                <a href="sub2.html">装備について</a>
+            </nav>
+        </header>
+        <div class="omikuji">
+            <h2>おみくじ</h2>
+            <div>
+                <button type="button" onclick="omikuji()">おみくじを引く</button>
+                <p id="result">今日の運勢は…</p>
+            </div>
+        </div>
+        <div class="quiz">
+         <div class="inner-block">
+             <div class="quiz-content">
+                 <div class="quiz-question-number">質問1</div>
+                        <h2 class="quiz-question">中国語で「こんにちは」はどれ？</h2>
+                        <!-- <ul class="quiz-answer">
+                                    
+                            <li>
+                                <label class="button01">
+                                <input name="radio" type="radio" value="a">
+                                <span class="quiz-text01">你好！</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="button02">
+                                <input name="radio" type="radio" value="b">
+                                <span class="quiz-text01">欢迎！</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="button03">
+                                <input name="radio" type="radio" value="c">
+                                <span class="quiz-text01">谢谢！</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="button04">
+                                <input name="radio" type="radio" value="d">
+                                <span class="quiz-text01">再见！</span>
+                                </label>
+                            </li>  -->
+                        <div class="quiz_1">
+                            <ul class="quiz-answer">
+                                
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >你好！</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >欢迎！</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >谢谢！</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >再见！</label></li>
+                                
+                                <button class="btn" type="button" onclick="answerQuiz1(this.form)">回答する</button>                                
+                            </ul>
+                            <!-- <form id="">
+                                <label><input name="answer" type="radio" value="a"></label>
+                                <label><input name="answer" type="radio" value="b"></label>
+                                <label><input name="answer" type="radio" value="c"></label>
+                                <label><input name="answer" type="radio" value="d"></label>
+                            
+                                <button class="btn" type="button" onclick="answerQuiz1(this.form)">回答する</button>
+                            </form>     -->
+                        </div>                              
+                        <!-- </ul> -->
+                       
+                    </div>
+                </div>
+                <div>
+                    <button type="button" onclick="toggle1()" class="kaisetsu">解説</button> 
+                    <p id="quiz-01">正解はAの「你好」。Bの「欢迎」は「ようこそ」という意味。
+                    <br>Cの「谢谢」はお馴染みの「ありがとう」、Dの「再见」は「さようなら」だよ。</p>
+                </div>
+            </div>
+           
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問2</div>
+                            <h2 class="quiz-question">「麻烦你了。」は日本語でどんな意味？</h2>
+                            <ul class="quiz-answer">
+                                
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >最近忙しかったです。</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >麻婆豆腐が好きです。</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >ご面倒をおかけしました。</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >お邪魔しました。</label></li>
+                                
+                                <button class="btn" type="button" onclick="answerQuiz2(this.form)">回答する</button>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle2()" class="kaisetsu">解説</button> 
+                        <p id="quiz-02">正解はCの「ご面倒をおかけしました」。「最近忙しかったです」は「我最近很忙」、「麻婆豆腐が好きです」は「我喜欢麻婆豆腐」、「お邪魔しました」は「我打扰你了」だよ。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問3</div>
+                            <h2 class="quiz-question">「对不起。」は日本語でどんな意味？</h2>      
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >起きたくありません。</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >どうぞ。</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >どういたしまして。</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >すみません。</label></li>
+
+                                <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>                                             
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle3()" class="kaisetsu">解説</button> 
+                        <p id="quiz-03">正解はDの「すみません」。「起きたくありません」は「我不想起床」だね。
+                            <br>「どうぞ」というときは最初に「请」をつけよう。「どういたしまして」は「不谢」。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問4</div>
+                            <h2 class="quiz-question">「对不起。」と言われたら、中国語でなんと返す？
+                            </h2>
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >打搅你了。</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >没关系。</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >请进。</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >不谢。</label></li>
+    
+                                <button class="btn" type="button" onclick="answerQuiz4();">回答する</button>                                             
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle4()" class="kaisetsu">解説</button> 
+                        <p id="quiz-04">正解はBの「没关系」（どういたしまして）。Aの「打搅你了」は「お邪魔しました」、
+                            Cの「请进」は「どうぞお入りください」、Dの「不谢」は「どういたしまして」だよ。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問5</div>
+                            <h2 class="quiz-question">初対面の人に、「どうぞよろしく」と伝えたいときは？</h2>
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >我也很高兴。</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >请跟我念。</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >请多关照。</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >我喜欢唱歌儿。</label></li>                                         
+                                
+                                <button class="btn" type="button" onclick="answerQuiz5();">回答する</button>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle5()" class="kaisetsu">解説</button> 
+                        <p id="quiz-05">正解はCの「请多关照」。Aの「我也很高兴」は「私もとても嬉しいです」、
+                            <br>Bの「请跟我念」は「私について読んでください」、Dの「我喜欢唱歌儿」は「私は歌を歌うのが好きです」だよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="score-container">
+                <p id="score-message"></p>
+              </div>
+              <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+            </div>
+
+        <div>
+            <ul>
+                <li><a href="#top">トップに戻る</a></li>
+                <!-- <li><a href="main.html">メインページに戻る</a></li> -->
+                </ul>
+        </div>
+    </div>
+
+    <div>
+        <p>
+        </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

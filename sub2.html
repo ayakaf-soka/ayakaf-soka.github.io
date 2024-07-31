@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayaka Fujiyoshi">
+    <meta name="keywords" content="html, css, javascript">
+    <title>課題4</title>
+    <link rel="stylesheet" href="./css/sub2.css">
+</head>
+    
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>▶︎ブランド・企業名編</h1>
+
+            <nav>
+                <a href="main.html">ホーム</a>
+                <a href="sub1.html">名詞編</a>
+                <a href="sub2.html">ブランド・企業名編</a>
+            </nav>
+        </header>
+ 
+        <div class="quiz">
+         <div class="inner-block">
+             <div class="quiz-content">
+                 <div class="quiz-question-number">質問1：ファストフード</div>
+                        <h2 class="quiz-question">中国語で「マクドナルド」はどれ？</h2>
+                        <div class="quiz_1">
+                            <div class="sampleImage"><img src="./media/mac.jpg" alt="マクドナルド" width="500" height="300"></div>
+                            <ul class="quiz-answer">
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >摩斯汉堡</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >乐天利</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >汉堡王</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >⻨当劳</label></li>
+                                
+                                <button class="btn" type="button" onclick="answerQuiz1(this.form)">回答する</button>                                
+                            </ul>
+                        </div>                                                     
+                    </div>
+                </div>
+                <div>
+                    <button type="button" onclick="toggle1()" class="kaisetsu">解説</button> 
+                    <p id="quiz-01">正解はDの「⻨当劳」。Aの「摩斯汉堡」は「モスバーガー」。
+                    <br>Bの「乐天利」は「ロッテリア」、Cの「汉堡王」は「バーガーキング」だよ。</p>
+                </div>
+            </div>
+           
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問2：コンビニ</div>
+                            <h2 class="quiz-question">中国語で「ファミリーマート」はどれ？</h2>
+                            <div class="sampleImage"><img src="./media/familymart.jpg" alt="ファミリーマート" width="500" height="300"></div>
+                            <ul class="quiz-answer"> 
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >全家</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >永旺</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >7-11</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >罗森</label></li>
+                                
+                                <button class="btn" type="button" onclick="answerQuiz2(this.form)">回答する</button>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle2()" class="kaisetsu">解説</button> 
+                        <p id="quiz-02">正解はAの「全家」。Bの「永旺」は「イオン」、
+                            <br>「7-11」は「セブンイレブン」、「罗森」は「ローソン」だよ。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問3：有名企業①</div>
+                            <h2 class="quiz-question">中国語で「Google」はどれ？</h2> 
+                            <div class="sampleImage"><img src="./media/google.jpg" alt="グーグル" width="500" height="300"></div>     
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >苹果</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >谷歌</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >微软</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >雅⻁</label></li>
+
+                                <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>                                             
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle3()" class="kaisetsu">解説</button> 
+                        <p id="quiz-03">正解はBの「谷歌」。Aの「苹果」は「Apple」だね。
+                            <br>Cの「微软」は「Microsoft」だよ。Dの「雅⻁」は「Yahoo！」。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問4：有名企業②</div>
+                            <h2 class="quiz-question">中国語で「ディズニー」はどれ？
+                            </h2>
+                            <div class="sampleImage"><img src="./media/disneyland.jpg" alt="ディズニー" width="500" height="300"></div>
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >乐高</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >亚⻢逊</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >环球影城</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >迪士尼</label></li>
+    
+                                <button class="btn" type="button" onclick="answerQuiz4();">回答する</button>                                             
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle4()" class="kaisetsu">解説</button> 
+                        <p id="quiz-04">正解はDの「迪士尼」。Aの「乐高」は「レゴ」、
+                            <br>Bの「亚⻢逊」は「アマゾン」、Cの「环球影城」は「ユニバーサルスタジオ」だよ。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問5：自動車メーカー</div>
+                            <h2 class="quiz-question">中国語で「フォルクスワーゲン」はどれ？</h2>
+                            <div class="sampleImage"><img src="./media/car.jpg" alt="フォルクスワーゲン" width="500" height="300"></div>
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >斯巴鲁</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >宝⻢</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >大众</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >⻢自达</label></li>                                         
+                                
+                                <button class="btn" type="button" onclick="answerQuiz5();">回答する</button>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle5()" class="kaisetsu">解説</button> 
+                        <p id="quiz-05">正解はCの「大众」。Aの「斯巴鲁」は「スバル」、
+                            <br>Bの「宝⻢」は「BMW」、Dの「⻢自达」は「マツダ」だよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="score-container">
+                <p id="score-message"></p>
+              </div>
+              <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+            </div>
+
+        <div>
+            <ul>
+                <li><a href="#top">トップに戻る</a></li>
+                <!-- <li><a href="main.html">メインページに戻る</a></li> -->
+                </ul>
+        </div>
+    </div>
+
+    <div>
+        <p>
+        </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/sub2.js"></script>
+
+</body>
+</html>

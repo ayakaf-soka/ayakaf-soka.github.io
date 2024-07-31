@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayaka Fujiyoshi">
+    <meta name="keywords" content="html, css, javascript">
+    <title>課題4</title>
+    <link rel="stylesheet" href="./css/sub1.css">
+</head>
+    
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>▶︎初級中国語：名詞編</h1>
+
+            <nav>
+                <a href="main.html">ホーム</a>
+                <a href="sub1.html">名詞編</a>
+                <a href="sub2.html">ブランド・企業名編</a>
+            </nav>
+        </header>
+      
+        <div class="quiz">
+         <div class="inner-block">
+             <div class="quiz-content">
+                 <div class="quiz-question-number">質問1：場所</div>
+                        <h2 class="quiz-question">中国語で「駅」はどれ？</h2>
+                        <div class="quiz_1">
+                            <div class="sampleImage"><img src="./media/station.jpg" alt="駅" width="500" height="300"></div>
+                            <ul class="quiz-answer">
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >邮局</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >饭店</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >车站</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >机场</label></li>
+                                
+                                <button class="btn" type="button" onclick="answerQuiz1(this.form)">回答する</button>                                
+                            </ul>
+                        </div>                                                     
+                    </div>
+                </div>
+                <div>
+                    <button type="button" onclick="toggle1()" class="kaisetsu">解説</button> 
+                    <p id="quiz-01">正解はCの「车站」。Aの「邮局」は「郵便局」。
+                    <br>Bの「饭店」は「ホテル・料理店」、Dの「机场」は「空港」だよ。</p>
+                </div>
+            </div>
+           
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問2：乗り物</div>
+                            <h2 class="quiz-question">中国語で「バス」はどれ？</h2>
+                            <div class="sampleImage"><img src="./media/bus.jpg" alt="バス" width="500" height="300"></div>
+                            <ul class="quiz-answer"> 
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >电车</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >公交车</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >汽车</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >摩托车</label></li>
+                                
+                                <button class="btn" type="button" onclick="answerQuiz2(this.form)">回答する</button>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle2()" class="kaisetsu">解説</button> 
+                        <p id="quiz-02">正解はBの「公交车」。Aの「电车」は「電車」、
+                            <br>「汽车」は「自動車」、「摩托车」は「オートバイ」だよ。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問3：道具</div>
+                            <h2 class="quiz-question">中国語で「ケータイ」はどれ？</h2> 
+                            <div class="sampleImage"><img src="./media/phone.jpg" alt="スマホ" width="500" height="300"></div>     
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >钢笔</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >杂志</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >电脑</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >手机</label></li>
+
+                                <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>                                             
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle3()" class="kaisetsu">解説</button> 
+                        <p id="quiz-03">正解はDの「手机」。Aの「钢笔」は「万年筆」だね。
+                            <br>Bの「杂志」は「雑誌」だよ。Cの「电脑」は「パソコン」。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問4：食べ物</div>
+                            <h2 class="quiz-question">中国語で「ケーキ」はどれ？
+                            </h2>
+                            <div class="sampleImage"><img src="./media/cake.jpg" alt="ケーキ" width="500" height="300"></div>
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >油条</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >豆浆</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >蛋糕</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >水果</label></li>
+    
+                                <button class="btn" type="button" onclick="answerQuiz4();">回答する</button>                                             
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle4()" class="kaisetsu">解説</button> 
+                        <p id="quiz-04">正解はCの「蛋糕」。Aの「油条」は「揚げパン」、
+                            <br>Bの「豆浆」は「豆乳」、Dの「水果」は「果物」だよ。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="quiz">
+                    <div class="inner-block">
+                        <div class="quiz-content">
+                            <div class="quiz-question-number">質問5：スポーツ</div>
+                            <h2 class="quiz-question">中国語で「テニス」はどれ？</h2>
+                            <div class="sampleImage"><img src="./media/tennis.jpg" alt="テニス" width="500" height="300"></div>
+                            <ul class="quiz-answer">                               
+                                <li><label class="button01"><input name="answer" type="radio" value="a" >乒乓球</label></li>
+                                <li><label class="button02"><input name="answer" type="radio" value="b" >网球</label></li>
+                                <li><label class="button03"><input name="answer" type="radio" value="c" >足球</label></li>
+                                <li><label class="button04"><input name="answer" type="radio" value="d" >棒球</label></li>                                         
+                                
+                                <button class="btn" type="button" onclick="answerQuiz5();">回答する</button>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="toggle5()" class="kaisetsu">解説</button> 
+                        <p id="quiz-05">正解はBの「网球」。Aの「乒乓球」は「卓球」、
+                            <br>Cの「足球」は「サッカー」、Dの「棒球」は「野球」だよ。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="score-container">
+                <p id="score-message"></p>
+              </div>
+              <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+            </div>
+
+        <div>
+            <ul>
+                <li><a href="#top">トップに戻る</a></li>
+                <!-- <li><a href="main.html">メインページに戻る</a></li> -->
+                </ul>
+        </div>
+    </div>
+
+    <div>
+        <p>
+        </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/sub1.js"></script>
+
+</body>
+</html>
